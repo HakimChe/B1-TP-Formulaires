@@ -1,0 +1,66 @@
+<!DOCTYPE hsltml> 
+<html lang="fr">
+	<head>
+		<title> Sanaya </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	
+	<body>
+		<fieldset>
+			<legend> Nous contacter </legend>
+			
+			<form action="recapituler.php" method="GET" name="saisieContact">
+				
+				<label> Civilité : </label>
+				<input type="radio" name="civilite" value="melle" checked /> Melle 
+				<input type="radio" name="civilite" value="mme" checked /> Mme
+				<input type="radio" name="civilite" value="mr" checked /> Mr.  
+				<br/><br/>
+				
+				<label> Nom : </label>
+				<input type="text" name="nom" /> 
+				<br/><br/>
+				
+				<label> Prénom : </label>
+				<input type="text" name="prenom" /> 
+				<br/><br/>
+				
+				<label> N° : </label>
+				<input type="tel" name="numeroTel" /> 
+				<br/><br/>
+				
+				<label> Email : </label>
+				<input type="text" name="email" /> 
+				<br/><br/>
+				
+				<label> Objet de la demande : </label>
+				<br/>
+				<select name="objet[]" size="2" multiple>
+					<option value="rgnmt"> Renseigenement </option>
+					<option value="reclam"> Réclamation </option>
+					<option value="cmd" > Commande </option>
+				</select>
+				<br/><br/>
+				
+				<textarea name="commentaire" rows="8" cols="45"> Veuillez nous décrire votre situation
+				</textarea>
+				<br/><br/>
+				
+				<label> Veuillez sélectionner un mode de réponse : </label>
+				<input type="radio" name="contact" value="viaMail" checked /> Email
+				<input type="radio" name="contact" value="viaSms" checked /> SMS
+				<input type="radio" name="contact" value="viaAppel" checked > Appel téléphonique </input>
+				
+				 
+				<br/><br/>
+				
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Réinitialiser" />
+				
+			</form>
+			
+		</fieldset>
+		
+	</body>
+	
+</html>
